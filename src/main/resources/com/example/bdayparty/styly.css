@@ -1,0 +1,84 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #2b0030, #120015);
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* PANELY */
+.header-pane {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-border-color: #ff007f;
+    -fx-border-width: 0 0 2 0;
+}
+
+.detail-pane {
+    -fx-background-color: rgba(255, 255, 255, 0.03);
+    -fx-background-radius: 15;
+    -fx-border-color: rgba(0, 255, 255, 0.3);
+    -fx-border-radius: 15;
+}
+
+/* BUTTONS */
+.button {
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+    -fx-background-radius: 20;
+    -fx-cursor: hand;
+    -fx-transition: 0.2s;
+}
+
+.button:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.btn-add {
+    -fx-background-color: #00ffcc;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+
+.btn-edit {
+    -fx-background-color: #ffcc00;
+    -fx-text-fill: #000000;
+}
+
+.btn-delete {
+    -fx-background-color: #ff3366;
+    -fx-text-fill: white;
+}
+
+/* LIST VIEW */
+.list-view {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-background-radius: 10;
+    -fx-border-color: #00ffcc;
+    -fx-border-radius: 10;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 10;
+}
+
+.list-cell:selected {
+    -fx-background-color: #ff007f;
+    -fx-text-fill: white;
+}
+
+/* TEXT FIELDS */
+.text-field {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-background-radius: 10;
+    -fx-prompt-text-fill: gray;
+}
+
+.text-field:focused {
+    -fx-border-color: #00ffcc;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+}
+
+.label {
+    -fx-text-fill: #ffffff;
+}
