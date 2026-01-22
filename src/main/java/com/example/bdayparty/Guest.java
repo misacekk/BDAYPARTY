@@ -1,4 +1,4 @@
-package com.example.bdayparty; // Změna na bdayparty
+package com.example.bdayparty;
 
 public class Guest {
     private String jmeno;
@@ -19,7 +19,5 @@ public class Guest {
     public void setStatus(String s) { this.status = s; }
 
     @Override
-    public String toString() {
-        return jmeno;
-    }
+    public String toString() { return jmeno; }
 }

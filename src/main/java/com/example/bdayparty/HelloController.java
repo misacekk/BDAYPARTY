@@ -7,16 +7,15 @@ import javafx.scene.control.TextField;
 
 public class HelloController {
 
-    @FXML
-    private ListView<Guest> guestListView; // Už nebude červené
-    @FXML
-    private Label jmenoLabel, darekLabel, statusLabel, searchLabel;
-    @FXML
-    private TextField jmenoField, darekField, statusField, searchField;
+    @FXML private ListView<Guest> guestListView;
+    @FXML private Label jmenoLabel, darekLabel, statusLabel, searchLabel;
+    @FXML private TextField jmenoField, darekField, statusField, searchField;
 
     @FXML
     public void initialize() {
-        guestListView.getItems().add(new Guest("Petr Novák", "Lego", "Potvrzeno"));
+        // Hned po startu tam něco hodíme, ať vidíš, že to jede
+        guestListView.getItems().add(new Guest("Pepa Zdepa", "Ponožky", "Ano"));
+        guestListView.getItems().add(new Guest("Alena Modrá", "Kytka", "Možná"));
     }
 
     @FXML
