@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="500.0" prefWidth="650.0" stylesheets="@styly.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demolistview.controller.HelloController">
+<BorderPane prefHeight="500.0" prefWidth="650.0" stylesheets="@styly.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demolistview.controller.HelloController">
     <top>
         <Label style="-fx-font-size: 24px; -fx-padding: 10;" text="🎂 B-Day Guest List" BorderPane.alignment="CENTER" />
     </top>
@@ -13,38 +20,44 @@
     </left>
     <center>
         <VBox spacing="10.0" styleClass="detail-pane">
-            <padding><Insets left="20" top="20"/></padding>
-            <Label fx:id="jmenoLabel" text="Jméno: --" />
-            <Label fx:id="darekLabel" text="Dárek: --" />
-            <Label fx:id="statusLabel" text="Status: --" />
+            <padding><Insets left="20" top="20" /></padding>
+            <Label fx:id="jmenoLabel" text="Jméno: " />
+            <Label fx:id="darekLabel" text="Dárek: " />
+            <Label fx:id="statusLabel" text="Status: " />
         </VBox>
     </center>
     <bottom>
         <GridPane hgap="10" vgap="10">
-            <padding><Insets bottom="20" left="20" right="20" top="20"/></padding>
+            <padding><Insets bottom="20" left="20" right="20" top="20" /></padding>
             <columnConstraints>
                 <ColumnConstraints minWidth="150" />
                 <ColumnConstraints minWidth="150" />
                 <ColumnConstraints minWidth="100" />
             </columnConstraints>
             <children>
-                <TextField fx:id="jmenoField" promptText="Jméno" GridPane.rowIndex="0"/>
-                <TextField fx:id="darekField" promptText="Dárek" GridPane.rowIndex="1"/>
-                <TextField fx:id="statusField" promptText="Status" GridPane.rowIndex="2"/>
-                <TextField fx:id="searchField" promptText="Hledat..." GridPane.rowIndex="3"/>
+                <TextField fx:id="jmenoField" promptText="Jméno" GridPane.rowIndex="0" />
+                <TextField fx:id="darekField" promptText="Dárek" GridPane.rowIndex="1" />
+                <TextField fx:id="statusField" promptText="Status" GridPane.rowIndex="2" />
+                <TextField fx:id="searchField" promptText="Hledat..." GridPane.rowIndex="3" />
 
-                <Label text="Celé jméno" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
-                <Label text="Nápad na dárek" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-                <Label text="Účast" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-                <Label fx:id="searchLabel" text="Hledání" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                <Label text="Celé jméno" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <Label text="Nápad na dárek" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label text="Účast" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Label fx:id="searchLabel" text="Hledání" GridPane.columnIndex="1" GridPane.rowIndex="3" />
 
                 <VBox spacing="5" GridPane.columnIndex="2" GridPane.rowSpan="4">
-                    <Button maxWidth="Infinity" onAction="#handlePridejHosta" text="Přidat" styleClass="btn-add"/>
-                    <Button maxWidth="Infinity" onAction="#handleUpravHosta" text="Upravit" styleClass="btn-edit"/>
-                    <Button maxWidth="Infinity" onAction="#handleOdeberHosta" text="Smazat" styleClass="btn-delete"/>
+                    <Button maxWidth="Infinity" onAction="#handlePridejHosta" styleClass="btn-add" text="Přidat" />
+                    <Button maxWidth="Infinity" onAction="#handleUpravHosta" styleClass="btn-edit" text="Upravit" />
+                    <Button maxWidth="Infinity" onAction="#handleOdeberHosta" styleClass="btn-delete" text="Smazat" />
                     <Button maxWidth="Infinity" onAction="#handleSearchHosta" text="Hledat" />
                 </VBox>
             </children>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
         </GridPane>
     </bottom>
 </BorderPane>
