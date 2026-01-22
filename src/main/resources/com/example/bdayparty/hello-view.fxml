@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="500.0" prefWidth="650.0" stylesheets="@styly.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demolistview.controller.HelloController">
+<BorderPane prefHeight="500.0" prefWidth="650.0" stylesheets="@styly.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bdayparty.HelloController">
     <top>
         <Label style="-fx-font-size: 24px; -fx-padding: 10;" text="🎂 B-Day Guest List" BorderPane.alignment="CENTER" />
     </top>
@@ -52,12 +52,12 @@
                     <Button maxWidth="Infinity" onAction="#handleSearchHosta" text="Hledat" />
                 </VBox>
             </children>
-         <rowConstraints>
-            <RowConstraints />
-            <RowConstraints />
-            <RowConstraints />
-            <RowConstraints />
-         </rowConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="30.0" />
+                <RowConstraints minHeight="30.0" />
+                <RowConstraints minHeight="30.0" />
+                <RowConstraints minHeight="30.0" />
+            </rowConstraints>
         </GridPane>
     </bottom>
 </BorderPane>
