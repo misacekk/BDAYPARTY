@@ -1,4 +1,4 @@
-package com.example.bdayparty;
+package com.example.bdayparty; // Změna na bdayparty
 
 public class Guest {
     private String jmeno;
@@ -12,14 +12,14 @@ public class Guest {
     }
 
     public String getJmeno() { return jmeno; }
-    public void setJmeno(String jmeno) { this.jmeno = jmeno; }
+    public void setJmeno(String j) { this.jmeno = j; }
     public String getDarek() { return darek; }
-    public void setDarek(String darek) { this.darek = darek; }
+    public void setDarek(String d) { this.darek = d; }
     public String getStatus() { return status; }
-    public void setStatus(String status) { this.status = status; }
+    public void setStatus(String s) { this.status = s; }
 
     @Override
     public String toString() {
-        return jmeno; // Důležité, aby se v seznamu objevilo jméno
+        return jmeno;
     }
 }
