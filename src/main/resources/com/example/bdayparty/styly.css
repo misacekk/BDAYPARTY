@@ -3,10 +3,10 @@
     -fx-font-family: "Segoe UI Semibold", sans-serif;
 }*/
 .root {
-    /* Cesta je relativní k umístění CSS souboru */
-    -fx-background-image: url("images/obrazek.jpg");
-    -fx-background-size: cover; /* Roztáhne obrázek na celé okno */
+    -fx-background-image: url("obrazek.jpg");
+    -fx-background-size: cover;
     -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
 }
 .header-pane {
     -fx-background-color: white;
